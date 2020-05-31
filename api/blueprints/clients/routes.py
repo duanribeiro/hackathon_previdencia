@@ -20,7 +20,7 @@ class Home(Resource):
         return Clients.get_all()
 
 @api.route('/ranking')
-class Home(Resource):
+class Ranking(Resource):
 
     @api.doc(responses={
         200: 'Sucesso',
@@ -32,3 +32,20 @@ class Home(Resource):
         """
 
         return Clients.get_ranking()
+
+@api.route('/<string:user_id>')
+class Home(Resource):
+
+    @api.doc(responses={
+        200: 'Sucesso',
+        500: 'Erro interno do servidor',
+    },
+        params={"user_id": "id do usuaŕio (5ed354e9abb821d580c6886c)"},
+        security=None)
+    def get(self, user_id):
+        """
+        Lista as transações do usuário
+
+        """
+
+        return Clients.get_transactions(user_id)

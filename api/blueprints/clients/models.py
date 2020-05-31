@@ -1,5 +1,5 @@
 import json
-from bson.json_util import dumps
+from bson.json_util import dumps, ObjectId
 from api import mongo
 
 
@@ -11,6 +11,14 @@ class Clients:
 
         return json.loads(
             dumps(query)
+        )
+
+    @staticmethod
+    def get_transactions(user_id):
+        query = mongo.db.clients.find_one({"_id": ObjectId(user_id)}, {"_id": 0, "transactions": 1})
+
+        return json.loads(
+            dumps(query['transactions'])
         )
 
     @staticmethod
