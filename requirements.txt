@@ -13,7 +13,7 @@ pytz==2020.1
 six==1.14.0
 Werkzeug==0.16.1
 zipp==3.1.0
-zappa==0.45.1
 flask_pymongo
 flask_cors
 dnspython
+pandas
