@@ -1,5 +1,5 @@
 # Database API
-[![Python](https://img.shields.io/badge/python-3.6-blue.svg)]()
+![Python](https://img.shields.io/badge/python-3.6-blue.svg) [![Python](https://img.shields.io/badge/MongoDB-green.svg)]()
 
 The main objective of this API is create a communication layer between services and the database. Built in
 [Flask RESTPlus](https://flask-restplus.readthedocs.io/en/stable/index.html) which encourages best practices with 
