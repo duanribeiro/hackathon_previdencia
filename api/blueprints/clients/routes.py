@@ -19,3 +19,16 @@ class Home(Resource):
 
         return Clients.get_all()
 
+@api.route('/ranking')
+class Home(Resource):
+
+    @api.doc(responses={
+        200: 'Sucesso',
+    },
+        security=None)
+    def get(self):
+        """
+        Lista o ranking
+        """
+
+        return Clients.get_ranking()

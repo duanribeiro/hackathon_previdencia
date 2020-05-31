@@ -12,3 +12,12 @@ class Clients:
         return json.loads(
             dumps(query)
         )
+
+    @staticmethod
+    def get_ranking():
+        query = mongo.db.clients.find({}, {'_id': 0, "first_name": 1, "last_name": 1, "total_stars": 1})\
+            .sort('total_stars', -1)
+
+        return json.loads(
+            dumps(query)
+        )
