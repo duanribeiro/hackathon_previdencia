@@ -10,7 +10,7 @@ minimal setup.
 ## Installing
 
 ```
-git clone https://github.com/OctaplusFinancialAnalytics/database_api.git && cd database_api
+git clone https://github.com/duanribeiro/hackathon_previdencia.git && cd database_api
 pip install -r requirements.txt
 ```
 
