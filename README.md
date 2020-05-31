@@ -30,4 +30,5 @@ docker run --name backend backend
 ## Swagger
 
 After the application goes up, open your browser on `localhost:5000/docs`  to see the self-documented interactive API.
+
 Live Example: [https://jwtrc70u17.execute-api.us-east-1.amazonaws.com/dev/docs](https://jwtrc70u17.execute-api.us-east-1.amazonaws.com/dev/docs)
